@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomePage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQM-ei-XdB">
+                                <rect key="frame" x="46" y="246" width="120" height="120"/>
+                                <state key="normal" title="Button" image="Fist"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-zA-cxn">
+                                <rect key="frame" x="46" y="503" width="120" height="120"/>
+                                <state key="normal" title="Button" image="person-raising-hand_1f64b"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLH-bq-soT">
+                                <rect key="frame" x="248" y="503" width="120" height="120"/>
+                                <state key="normal" title="Button" image="woman-tipping-hand_1f481-200d-2640-fe0f"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQa-pN-IDX">
+                                <rect key="frame" x="52" y="374" width="109" height="20"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.8599940452" blue="0.94445566390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Movements">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="20" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9X-Tl-DkS">
+                                <rect key="frame" x="236" y="374" width="145" height="20"/>
+                                <color key="backgroundColor" red="0.92095825740000004" green="1" blue="0.99061377149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Appreciation">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="20" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2h-2X-2tZ">
+                                <rect key="frame" x="34" y="631" width="145" height="20"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.90717696039999995" blue="0.79039934779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Volunteering">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="20" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBu-gd-X03">
+                                <rect key="frame" x="278" y="631" width="61" height="20"/>
+                                <color key="backgroundColor" red="0.78230781250000003" green="0.80612962330000004" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="About">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="20" name="Courier"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRS-lY-VII">
+                                <rect key="frame" x="248" y="246" width="120" height="120"/>
+                                <state key="normal" title="Button" image="megaphone_1f4e3"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OBu-gd-X03" firstAttribute="width" secondItem="YQM-ei-XdB" secondAttribute="width" id="4Vc-kd-Ags"/>
+                            <constraint firstItem="uLH-bq-soT" firstAttribute="width" secondItem="YQM-ei-XdB" secondAttribute="width" id="78d-21-935"/>
+                            <constraint firstItem="r2h-2X-2tZ" firstAttribute="height" secondItem="YQM-ei-XdB" secondAttribute="height" id="Adz-QO-FEC"/>
+                            <constraint firstItem="uLH-bq-soT" firstAttribute="height" secondItem="YQM-ei-XdB" secondAttribute="height" id="IOF-Os-E9W"/>
+                            <constraint firstItem="OBu-gd-X03" firstAttribute="height" secondItem="YQM-ei-XdB" secondAttribute="height" id="M2b-l6-tQk"/>
+                            <constraint firstItem="J9X-Tl-DkS" firstAttribute="height" secondItem="YQM-ei-XdB" secondAttribute="height" id="MIx-9b-OFV"/>
+                            <constraint firstItem="KQa-pN-IDX" firstAttribute="width" secondItem="YQM-ei-XdB" secondAttribute="width" id="XPW-ew-FNN"/>
+                            <constraint firstItem="KQa-pN-IDX" firstAttribute="height" secondItem="YQM-ei-XdB" secondAttribute="height" id="el8-Cq-cOX"/>
+                            <constraint firstItem="q9S-zA-cxn" firstAttribute="height" secondItem="YQM-ei-XdB" secondAttribute="height" id="gXr-RV-r3q"/>
+                            <constraint firstItem="J9X-Tl-DkS" firstAttribute="width" secondItem="YQM-ei-XdB" secondAttribute="width" id="l6s-yv-G1z"/>
+                            <constraint firstItem="q9S-zA-cxn" firstAttribute="width" secondItem="YQM-ei-XdB" secondAttribute="width" id="mGt-Oj-Vo2"/>
+                            <constraint firstItem="lRS-lY-VII" firstAttribute="height" secondItem="YQM-ei-XdB" secondAttribute="height" id="n9P-yo-Plz"/>
+                            <constraint firstItem="r2h-2X-2tZ" firstAttribute="width" secondItem="YQM-ei-XdB" secondAttribute="width" id="r8a-DH-yhX"/>
+                            <constraint firstItem="lRS-lY-VII" firstAttribute="width" secondItem="YQM-ei-XdB" secondAttribute="width" id="ycV-Qa-ihH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Fist" width="160" height="160"/>
+        <image name="megaphone_1f4e3" width="160" height="160"/>
+        <image name="person-raising-hand_1f64b" width="160" height="160"/>
+        <image name="woman-tipping-hand_1f481-200d-2640-fe0f" width="160" height="160"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
